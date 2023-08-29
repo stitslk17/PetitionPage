@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Petition</title>
+    <style>
+        body {
+        font-family: "Open Sans", sans-serif;
+        display:flex; 
+        flex-direction:column; 
+        justify-content:center;
+        }
+
+        
+    /* Add a black background color to the top navigation */
+    .ttopnav {
+        overflow: hidden;
+        
+        margin-left:15%
+        }
+
+        /* Style the links inside the navigation bar */
+        .ttopnav a {
+        float: left;
+        text-align: center;
+        padding: 14px 16px;
+        vertical-align: bottom;
+        line-height: 20px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+                /* Change the color of links on hover */
+                .ttopnav a:hover {
+        color:#c84986 !important;
+        cursor:pointer;
+        }
+
+    /* Add a black background color to the top navigation */
+        .topnav {
+        overflow: hidden;
+        
+        margin-left:15%
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+        float: left;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+        color:#c84986 !important;
+        cursor:pointer;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            border-bottom: 4px solid #c84986;
+            color:#c84986;
+            font-weight:bold;
+        }
+        ul { margin: 0; }
+
+        .nav-right {
+          display: flex;
+          flex-direction: row;
+          float: right;
+        }
+
+    svg:hover {
+      color:#c84986;
+      cursor:pointer;
+    }
+
+    </style>
+
+    <body>
+        <div class="ttopnav">
+            <a style = "font-weight: bold;font-size: 30px;color:#c84986">change.org</a>
+            <a >Start a petition</a>
+            <a >My petitions</a>
+            <a >Browse</a>
+            <a >Membership</a>
+
+            
+    <div class="nav-right">
+      <svg  width="20" height="20" fill="currentColor" viewBox="0 0 16 16"style="margin:auto">
+        <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+        <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
+      </svg>
+          <a >Log in</a>
+        </div></div>
+            
+        
+    <hr style="width:100%;height:2px;text-align:left;margin-top:0;background-color:lightgray">
+
+    <div class="topnav">
+        <a class="active">Petition details</a>
+        <a >Comments</a>
+        <a >Updates</a>
+    </div>
+
+    <hr style="width:100%;height:2px;text-align:left;margin-top:0;background-color:lightgray">
+
+    <h1 style=
+    "font-weight:bold;margin: auto;width: 50%;padding-top: 3%;padding-bottom: 3%;">Assignment 2: Petition Page - Nano Project</h1>
+    
+
+    <img src="images/image.jpg" style = "height:50%;width:50%;border-radius:15px;margin: auto;padding-bottom:2%">
+
+    <figure style = "margin-left:25%;vertical-align: middle; display: flex;align-items: center;justify-content: start;flex-wrap: wrap;">
+        <img class = "icon" src="images/image1.jpg" style = "height:10%;width:10%;border-radius:50%;">
+        <p style ="padding-left: 20px;">
+            <b style = "color:#c84986;text-decoration: underline dotted;">Linh Stitsel</b> started this petition to 
+            <b style = "color:#c84986;text-decoration: underline dotted;">CPT_S 489 Web Development</b></p>
+    </figure>
+
+    <div class = "txt" style = "margin-left:25%;margin-right:25%;white-space: pre-line;
+   ">
+        <b style = "text-decoration: underline;">
+        Build a Simple Petition Page web application using Express MVC</b>
+        <ul>
+        <li>The web application requires only one HTML page 'Petition.html'.
+        <li>The page displays a petition of your choice (~2 paragraphs and optional images).
+        <ul><li>See https://www.change.org/petitionsLinks to an external site. for sample text. You can choose a random petition or you may create one on your own.</ul>
+        <li>When the user scrolls down to the bottom of the petition page, they should see a form and a table.
+        <li>The form should have two text fields (full name, city) and a checkbox which says that the "user agrees to sign the petition" (The usual click to agree text) followed by the submit button.
+        <ul><li>You can add more fields to the form as you like.</ul>
+        <li>The table should display the list of people who have signed so far (name & location)
+        <ul><li>Optionally you may display more information</ul>
+        <li>Please spend a bit of time for the front-end, so that it looks reasonably polished and aesthetically nice</ul>
+        Things that you don't need to bother about<ul>
+        <li>No need for login/authentication
+        <li>No need for a database or an ORM like sequelize
+        <ul><li>Don't even bother to use even an in-memory database
+        <li>You can store the data in a simple Javascript array (yes, when the application restarts the data disappears and its ok)</ul></ul>
+        <b style = "text-decoration: underline;">
+        What to turn in</b>
+            <ul>
+        <li>Your code in a zip file
+        <li>A screenshot of your application (PNG or JPEG)
+        <li>(optional) Readme</ul>
+        <b style = "text-decoration: underline;">
+        Evaluation Process</b> 
+            <ul>
+        <li>I (or TA) will do the following steps to evaluate your application and <b style = "font-weight: bold;">it must work out of the box</b>
+            <ul><li>unzip your application
+        <li>navigate into the folder which has package.json and do 'npm install'
+        <li>run 'nodemon' or 'npm run start' (Note: for this to work, you should clearly specify the starting point in package.json. I strongly recommend using express-generator to make this easy for you)
+        <li>open the browser and go to "localhost:3000" (which should bring up the petition page)
+        <li>add a couple of signature and see if it shows up in the table below </ul>
+        <li>Please test whether your application works out of the box
+        <ul><li>If necessary, you may add a clear README file</ul>
+        <li>The assignment is very simple for a purpose. The evaluation scheme is all or nothing. 
+        <ul><li>If you have a working application 9/10 points. On top of that, If front end looks decent, then you get the whole 10/10 points.
+        <li>If your application does not work, but on looking at your code we are convinced that you have put in decent effort then you will get 5/10
+        <li>anything else gets you a 0
+        </ul></ul>
+        Note: You can use the microproject as the base for your application
+        </div>
+
+        <section id="course-form" style = "margin-top: 2%;">
+            <div class="container-lg">
+                
+      <div class="p-lg-2 text-center" style = "background-color: #c84986;color:white;margin-bottom:1%">
+        <h1>Sign this petition</h1>
+      </div>  
+              <form method = "post" action = "/create">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1"><b>Full Name</b></label>
+                  <input required name ="fullname" type="text" class="form-control" id="exampleFormControlInput1" >
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1"><b>City</b></label>
+                  <input required name ="city" type="text" class="form-control" id="exampleFormControlInput1" >
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name = "terms" required>
+                    <label class="form-check-label" for="flexCheckDefault">
+                      User agrees to sign the petition
+                    </label>
+                  </div>
+                <div class="form-group">
+                  <input type="submit" value="Submit" class="btn btn-primary"style = "background-color: #c84986;margin-top:1%"></button>
+                </div>
+              </form>
+            </div>
+            </section>
+        
+<section id="course-details"style = "margin-top: 2%;margin-bottom:1%">
+    <div class="container-lg">
+      <div class="p-lg-2 text-center" style = "background-color: #c84986;color:white;padding:.5rem!important">
+        <h1>Signatures</h1>
+      </div>  
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Location</th>
+          </tr>
+        </thead>
+        <tbody>        
+          <% for (info of data) { %>
+          <tr>
+            <td scope="row"><a><%= info.fullname %></a></td>
+            <td><%= info.city %></td>
+          </tr>
+        <% } %>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+    </body>
+</head>
